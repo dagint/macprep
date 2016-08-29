@@ -209,6 +209,18 @@ echo "--> Installing idea + webstorm IDEs..."
 brew cask install webstorm
 brew cask install intellij-idea
 
+#install quicklook customizations
+echo "--> installing quicklook customizations..."
+brew cask install qlcolorcode
+brew cask install qlstephen
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install qlprettypatch
+brew cask install quicklook-csv
+brew cask install betterzipql
+brew cask install webpquicklook
+brew cask install suspicious-package
+
 echo "--> Installing ssh-copy-id"
 brew install ssh-copy-id
 echo "--> Generating ssh keys"
