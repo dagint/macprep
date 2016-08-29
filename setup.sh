@@ -30,9 +30,8 @@ echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> ~/.bash_pr
 #get cask
 echo "--> installing cask + chrome..."
 brew tap caskroom/cask
-brew install brew-cask
 brew cask install google-chrome
-brew update && brew upgrade brew-cask && brew cleanup
+brew update && brew cleanup
 
 echo "--> installing quicklook sublime-text + iterm2..."
 brew cask install sublime-text
@@ -190,11 +189,10 @@ echo "--> Installing vim + tree..."
 brew install vim --override-system-vi
 brew install tree
 
-
 echo "--> Installing docker + virtualbox..."
 #install docker
 brew cask install virtualbox
-brew install docker
+brew cask install docker
 
 echo "--> Setting up bash completion..."
 #Bash completion
@@ -245,3 +243,5 @@ brew cask install firefox
 
 echo "--> Installing libreoffice"
 brew cask install libreoffice
+
+brew update && brew cleanup
