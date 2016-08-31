@@ -205,10 +205,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 EOF
 
-echo "--> Installing idea + webstorm IDEs..."
-brew cask install webstorm
-brew cask install intellij-idea
-
 #install quicklook customizations
 echo "--> installing quicklook customizations..."
 brew cask install qlcolorcode
