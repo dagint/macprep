@@ -205,6 +205,46 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 EOF
 
+echo "--> Installing nmap..."
+#install nmap
+brew install nmap
+
+echo "--> Installing wget..."
+#install wget
+brew install wget
+
+echo "--> Installing speedtest_cli..."
+#install speedtest_cli
+brew install speedtest_cli
+
+echo "--> Installing macvim..."
+#install macvim
+brew install macvim
+
+echo "--> Installing htop..."
+#install htop
+brew install htop
+
+echo "--> Installing jq..."
+#install jq
+brew install jq
+
+echo "--> Installing irssi..."
+#install irssi
+brew install irssi
+
+echo "--> Installing hh..."
+#install hh
+brew install hh
+
+echo "--> Installing awscli..."
+#install awscli
+brew install awscli
+
+echo "--> Installing watch..."
+#install watch
+brew install watch
+
 #install quicklook customizations
 echo "--> installing quicklook customizations..."
 brew cask install qlcolorcode
@@ -215,7 +255,7 @@ brew cask install qlprettypatch
 brew cask install quicklook-csv
 brew cask install betterzipql
 brew cask install webpquicklook
-brew cask install suspicious-package
+#brew cask install suspicious-package
 
 echo "--> Installing ssh-copy-id"
 brew install ssh-copy-id
@@ -240,9 +280,6 @@ brew install python
 echo "--> Installing pip"
 sudo easy_install pip
 
-echo "--> Installing awscli"
-sudo pip install awscli --ignore-installed six --upgrade
-
 echo "--> Installing biba"
 brew cask install biba
 
@@ -251,5 +288,8 @@ brew cask install firefox
 
 echo "--> Installing libreoffice"
 brew cask install libreoffice
+
+echo "--> Installing Skype"
+brew cask install skype
 
 brew update && brew cleanup
