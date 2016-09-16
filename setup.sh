@@ -294,4 +294,3 @@ brew cask install skype
 
 brew update && brew cleanup
 
-echo "Hello Cole"
